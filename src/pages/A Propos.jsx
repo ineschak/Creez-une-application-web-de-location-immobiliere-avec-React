@@ -1,7 +1,11 @@
 import picture2 from '../assets/picture2.png'
+import '../styles/A Propos.css'
+
 function Apropos() {
     return (
-        <img src={picture2} alt='' />
+        <section>
+            <img src={picture2} alt='' />            
+        </section>
     )
 }
 

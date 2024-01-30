@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Accueil from './pages/Accueil.jsx'
 import Apropos from './pages/A Propos.jsx'
-import Header from './components/Header'
+import Header from './components/Header/header.jsx'
+import Logement from './pages/Logement.jsx'
+import "./styles/index.css";
  
 
 ReactDOM.render(
@@ -13,6 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/Accueil" element={<Accueil />} />
         <Route path="/A propos" element={<Apropos />} />
+        <Route path="/Logement" element={<Logement />} />
       </Routes>
     </Router>
   </React.StrictMode>,

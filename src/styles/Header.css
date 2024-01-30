@@ -1,4 +1,18 @@
-.nav {
+.lien-nav {
+  display: flex;
+  gap:50px;
+ 
+}
+.En-tête{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+ a{
   color: black;
   font-family: Montserrat;
   font-size: 24px;
@@ -6,5 +20,6 @@
   line-height: 34px;
   letter-spacing: 0em;
   text-align: right;
-  gap:57px
+  text-decoration: none;
 }
+ 

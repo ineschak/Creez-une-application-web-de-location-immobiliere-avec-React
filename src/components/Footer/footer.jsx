@@ -1,10 +1,10 @@
 import  footer from '../../assets/footer.png'
-import '../../styles/footer.css'
+import './footer.css'
 function Footer() {
     return (
-        <section>
-        <img src={footer} alt='footer' />
-        </section>
+        <footer>
+        <img className='imageFooter' src={footer} alt='footer' />
+        </footer>
     )
 }
 

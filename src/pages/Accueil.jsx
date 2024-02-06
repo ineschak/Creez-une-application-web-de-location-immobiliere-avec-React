@@ -1,14 +1,17 @@
-import picture1 from  '../assets/picture1.png'
-import "../styles/index.css";
-import logement from '../assets/logement.png'
-function body() {
-   return (
-       <section>
-           <img src={picture1} alt='' /> 
-           <img className='logement' src={logement} alt='' />           
-       </section>
-       )
+import picture1 from "../assets/picture1.png";
+import "../index.css"; 
+import   Card  from "../components/Card/newFile.jsx";
+
+function Accueil() {
+  return (
+     <>
+     <section className="banner">
+        <img className="picture1" src={picture1} alt="" />
+        <h1> Chez vous, partout et ailleurs</h1>
+     </section> 
+     <section className="gallery"> <Card /> </section>
+      </>
+  );
 }
 
-
-export default body
+export default Accueil;

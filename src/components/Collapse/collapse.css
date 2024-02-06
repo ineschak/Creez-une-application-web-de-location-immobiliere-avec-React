@@ -1,0 +1,59 @@
+.collapse-container {
+  background-color: #ff6060;
+  width: 80%;
+  height: 52px;
+  border-radius: 5px;
+  margin: auto;
+
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.collapse-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  margin: 0 20px;
+}
+
+/* Ajout d'une classe pour inverser la direction de la flèche */
+.collapse-header .arrow {
+  transition: transform 0.5s ease; /* Transition de la rotation */
+}
+
+.collapse-header .arrow-expanded {
+  transform: rotate(
+    -180deg
+  ); /* Rotation de la flèche lorsque le Collapse est ouvert */
+}
+.arrow {
+  width: 24px;
+  height: 13.71px;
+  top: 10.29px;
+  left: 4px;
+  rotate: 0 deg;
+}
+
+.collapse-content {
+  padding: 10px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  height: 0; /* Initialise la hauteur à 0 */
+  overflow: hidden; /* Cache le contenu par défaut */
+  transform: height 0.5s ease; /* Transition de la hauteur pour un effet d'expansion en douceur */
+}
+
+/* Ajout d'une classe pour augmenter la hauteur du contenu lorsqu'il est ouvert */
+.collapse-container.opened .collapse-content {
+  height: auto;
+  overflow: visible;
+}

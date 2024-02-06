@@ -1,28 +1,31 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Accueil from './pages/Accueil.jsx'
-import Apropos from './pages/A Propos.jsx'
-import Header from './components/Header/header.jsx'
-import Logement from './pages/Logement.jsx'
-import "./styles/index.css";
- 
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Accueil from "./pages/Accueil.jsx";
+import Apropos from "./pages/APropos/newFile.jsx";
+import Header from "./components/Header/header.jsx";
+import Logement from "./pages/Card.jsx";
+import Footer from "./components/Footer/footer.jsx";
+import Error from "./pages/Error/error.jsx";
+import "./index.css";
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/Accueil" element={<Accueil />} />
-        <Route path="/A propos" element={<Apropos />} />
-        <Route path="/Logement" element={<Logement />} />
-      </Routes>
+      <div id="container">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/a-propos" element={<Apropos />} />
+          <Route path="/logement/id" element={<Logement />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </div>
+      <Footer />
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+  </React.StrictMode>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
- 

@@ -1,4 +1,3 @@
-        
 import React, { useState } from 'react';
 import "./collapse.css"
 import vector from "../../assets/Vector.png"

@@ -1,6 +1,6 @@
 import picture1 from "../assets/picture1.png";
 import "../index.css"; 
-import   Card  from "../components/Card/newFile.jsx";
+import   Card  from "../components/Card/Card.jsx";
 
 function Accueil() {
   return (

@@ -4,10 +4,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil.jsx";
 import Apropos from "./pages/APropos/newFile.jsx";
 import Header from "./components/Header/header.jsx";
-import Logement from "./pages/Card.jsx";
+ import LogementPage from "./pages/Card.jsx"
 import Footer from "./components/Footer/footer.jsx";
 import Error from "./pages/Error/error.jsx";
 import "./index.css";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -17,10 +18,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/a-propos" element={<Apropos />} />
-          <Route path="/logement/id" element={<Logement />} />
           <Route path="*" element={<Error />} />
+          <Route path="/logement/:id" element={<LogementPage/>} />
         </Routes>
-      </div>
+      </div> 
       <Footer />
     </Router>
   </React.StrictMode>

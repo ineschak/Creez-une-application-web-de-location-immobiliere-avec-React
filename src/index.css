@@ -6,6 +6,8 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
+  font-family: Montserrat;
+  padding: 0;
 }
 
 .banner {
@@ -31,4 +33,83 @@ h1 {
   font-size: 48px;
   width: 100%;
   margin: auto;
+}
+.LogementInfo {
+  height: 643px;
+}
+.image-carrousel {
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  color: #ff6060;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.txt {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  margin: 0;
+}
+span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #ff6060;
+  color: #ffffff;
+  border: 1px solid #000000;
+  width: 115px;
+  height: 25px;
+}
+
+.tags {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.collapse {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 52px;
+  gap: 30px;
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+.div-nom{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  color: #ff6060;
+  align-items: center;
+}
+.cercle {
+  width: 64px;
+  height: 64px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.nom{
+   width: 94px;
+   height:52px;
 }

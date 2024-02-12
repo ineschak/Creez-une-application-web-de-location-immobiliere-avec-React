@@ -43,8 +43,9 @@ h3 {
 }
 
 .collapse-content {
-  padding: 10px;
-  font-family: Montserrat;
+    color: black;
+    margin: 0;
+  padding: 10px 10px 0 10px;
   font-size: 18px;
   font-weight: 400;
   height: 0; /* Initialise la hauteur à 0 */

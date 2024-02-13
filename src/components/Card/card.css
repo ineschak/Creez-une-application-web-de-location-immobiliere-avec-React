@@ -13,26 +13,25 @@
   width: 30%;
 }
 
-.card{
+.card {
   border-radius: 10px;
 }
-.lien{
+.lien {
   position: relative;
 }
 h2 {
   position: absolute;
-   margin: 0;
-   width:300px ;
+  margin: 0;
+  width: 300px;
   color: rgb(174, 14, 14);
- bottom: 10px;
- left: 10px;
+  bottom: 10px;
+  left: 10px;
   font-family: Montserrat;
-font-size: 18px;
-font-weight: 700;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .cardList {
@@ -44,4 +43,3 @@ text-align: left;
 .cardList .card {
   width: 100%;
 }
- 

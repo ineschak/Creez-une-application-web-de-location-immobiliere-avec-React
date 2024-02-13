@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil.jsx";
-import Apropos from "./pages/APropos/newFile.jsx";
-import Header from "./components/Header/header.jsx";
+import Apropos from "./pages/APropos/Apropos.jsx";
+import Header from "./components/Header/Header.jsx";
  import LogementPage from "./pages/Card.jsx"
-import Footer from "./components/Footer/footer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import Error from "./pages/Error/error.jsx";
 import "./index.css";
 

@@ -1,7 +1,7 @@
 import "../index.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Collapse from "../components/Collapse/collapse.jsx";
+import Collapse from "../components/Collapse/Collapse.jsx";
 
 const LogementPage = () => {
   const [logement, setLogement] = useState(null);

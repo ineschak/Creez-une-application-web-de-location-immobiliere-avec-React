@@ -1,6 +1,5 @@
-import React from 'react';
-import Slider from 'react-slick';
- 
+import React from "react";
+import Slider from "react-slick";
 
 const Carrousel = ({ logement }) => {
   const settings = {
@@ -8,7 +7,7 @@ const Carrousel = ({ logement }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   return (
@@ -17,7 +16,6 @@ const Carrousel = ({ logement }) => {
         <div key={index}>
           <img src={picture} alt={`${index + 1}`} />
           {/* Affichez le composant LogementPage pour chaque image du carrousel */}
-          
         </div>
       ))}
     </Slider>

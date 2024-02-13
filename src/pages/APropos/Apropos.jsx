@@ -1,6 +1,6 @@
 import picture2 from "../../assets/picture2.png";
-import "./a-propos.css";
-import Collapse from "../../components/Collapse/collapse.jsx";
+import "./Apropos.css";
+import Collapse from "../../components/Collapse/Collapse.jsx";
 
 export function Apropos() {
   return (
@@ -22,3 +22,4 @@ export function Apropos() {
     </section>
   );
 }
+export default Apropos;

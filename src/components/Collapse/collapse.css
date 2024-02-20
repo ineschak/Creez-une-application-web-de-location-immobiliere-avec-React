@@ -4,8 +4,7 @@
   height: 52px;
   border-radius: 5px;
   margin: auto;
-
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -30,9 +29,7 @@ h3 {
 }
 
 .collapse-header .arrow-expanded {
-  transform: rotate(
-    -180deg
-  ); /* Rotation de la flèche lorsque le Collapse est ouvert */
+  transform: rotate(-180deg);
 }
 .arrow {
   width: 24px;
@@ -44,17 +41,20 @@ h3 {
 
 .collapse-content {
   color: black;
-  margin: 0;
-  padding: 10px 10px 0 10px;
+  margin-bottom: 20px;
+  padding: 20px;
   font-size: 18px;
   font-weight: 400;
-  height: 0; /* Initialise la hauteur à 0 */
-  overflow: hidden; /* Cache le contenu par défaut */
-  transform: height 0.5s ease; /* Transition de la hauteur pour un effet d'expansion en douceur */
+  overflow: hidden;
+  transform: height 1s ease;
 }
 
 /* Ajout d'une classe pour augmenter la hauteur du contenu lorsqu'il est ouvert */
+
+.collapse-container.opened {
+  margin-bottom: 150px;
+}
 .collapse-container.opened .collapse-content {
-  height: auto;
+  background-color: #f6f6f673;
   overflow: visible;
 }

@@ -7,21 +7,32 @@ header {
 }
 
 nav a {
-  color: black;
+  color: #000000;
   text-decoration: none;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 24px;
+  font-weight: 500;
   line-height: 34px;
-}
-header img {
-  width: 18.2%;
 }
 
 nav {
   display: flex;
-  gap: 60px;
+  text-align: right;
+  gap: 57px;
 }
 
 a:focus {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 375px) {
+  nav a {
+    font-size: 12px;
+  }
+  nav {
+    gap: 26px;
+  }
+  header img {
+    width: 145px;
+  }
 }

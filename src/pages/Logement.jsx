@@ -1,7 +1,10 @@
 import "../index.css";
+import "../components/Collapse/collapse.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Collapse from "../components/Collapse/Collapse.jsx";
+import Carrousel from "../components/Carrousel/Carrousel.jsx";
+import Rating from "../components/Rating/Rating.jsx";
 
 const LogementPage = () => {
   const [logement, setLogement] = useState(null);
@@ -35,32 +38,39 @@ const LogementPage = () => {
   }
   return (
     <div className="LogementInfo">
-      <img className="image-carrousel" src={logement.pictures[0]} alt="Cover" />
+      <Carrousel pictures={logement.pictures} />
       <div className="div">
         <p className="title">{logement.title}</p>
         <div className="div-nom">
-        <div className="nom">{logement.host.name}</div>
-        <div className="cercle"></div>
+          <div className="nom">{logement.host.name}</div>
+          <div className="cercle"></div>
         </div>
-        
-      </div> 
-      <p className="txt">{logement.location}</p>
-      <div className="tags">
-        {logement.tags.map((tag, index) => (
-          <span key={index}>{tag}</span>
-        ))}
       </div>
-      <div className="collapse">
-        <Collapse title="Description">
-          <p className="collapse-content"> {logement.description}</p>
-        </Collapse>
-        <Collapse title="Équipements">
-          {logement.equipments.map((equipment, index) => (
-            <p className="collapse-content" key={index}>
-              {equipment}
-            </p>
+      <p className="txt">{logement.location}</p>
+      <div className="div">
+        <div className="tags">
+          {logement.tags.map((tag, index) => (
+            <div className="contour">
+              {" "}
+              <span className="tag" key={index}>
+                {tag}
+              </span>
+            </div>
           ))}
-        </Collapse>
+        </div>
+        <Rating value={logement.rating} />
+      </div>
+      <div className="divCollapse">
+        <Collapse
+          title="Description"
+          children={logement.description}
+        ></Collapse>
+        <Collapse
+          title="Équipements"
+          children={logement.equipments.map((equipment, index) => (
+            <p key={index}>{equipment}</p>
+          ))}
+        ></Collapse>
       </div>
     </div>
   );

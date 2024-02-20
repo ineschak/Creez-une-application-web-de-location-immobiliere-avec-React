@@ -1,9 +1,10 @@
-import footer from "../../assets/footer.png";
-import "./Footer.css";
+import LOGO1 from "../../assets/LOGO1.png";
+import "./footer.css";
 function Footer() {
   return (
     <footer>
-      <img className="imageFooter" src={footer} alt="footer" />
+      <img src={LOGO1} alt="" />
+      <p className="footer-txt">© 2020 Kasa. All rights reserved </p>
     </footer>
   );
 }

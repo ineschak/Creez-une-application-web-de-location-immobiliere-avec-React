@@ -4,14 +4,17 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil.jsx";
 import Apropos from "./pages/APropos/Apropos.jsx";
 import Header from "./components/Header/Header.jsx";
- import LogementPage from "./pages/Card.jsx"
+import LogementPage from "./pages/Logement.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Error from "./pages/Error/error.jsx";
 import "./index.css";
 
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    ></link>
     <Router>
       <div id="container">
         <Header />
@@ -19,9 +22,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/" element={<Accueil />} />
           <Route path="/a-propos" element={<Apropos />} />
           <Route path="*" element={<Error />} />
-          <Route path="/logement/:id" element={<LogementPage/>} />
+          <Route path="/logement/:id" element={<LogementPage />} />
         </Routes>
-      </div> 
+      </div>
       <Footer />
     </Router>
   </React.StrictMode>

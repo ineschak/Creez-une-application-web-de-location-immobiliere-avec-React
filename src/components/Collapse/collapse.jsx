@@ -16,10 +16,10 @@ const Collapse = ({ title, children }) => {
         <img
           className={`arrow ${isCollapsed ? "" : "arrow-expanded"}`}
           src={vector}
-          alt={isCollapsed ? "Flèche vers le bas" : "Flèche vers la droite"}
+          alt={isCollapsed ? "Flèche vers le bas" : "Flèche vers le haut"}
         />
       </div>
-      {!isCollapsed && <div className="collapse-content">{children}</div>}
+      <div className="collapse-content">{children}</div>
     </div>
   );
 };

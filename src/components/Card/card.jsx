@@ -18,7 +18,7 @@ const Card = () => {
   return (
     <div className="cardList">
       {data.map((item, index) => (
-        <Link className="lien" key={item.id} to={`logement/${item.id}`}>
+        <Link key={item.id} to={`logement/${item.id}`}>
           <img
             className="card"
             key={index}

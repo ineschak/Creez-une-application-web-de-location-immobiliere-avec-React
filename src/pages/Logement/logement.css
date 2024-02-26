@@ -1,0 +1,80 @@
+.LogementInfo {
+  width: 100%;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  color: #ff6060;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.txt {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  margin: 0;
+}
+.tag {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #ff6060;
+  padding: 5px 25px 5px 25px;
+
+  color: #ffffff;
+}
+
+.contour {
+  border: 1px solid #000000;
+  border-radius: 0;
+}
+.tags {
+  display: flex;
+  gap: 15px;
+}
+.divCollapse {
+  display: flex;
+  margin-top: 20px;
+  gap: 76px;
+}
+.divCollapse h3 {
+  font-size: 18px;
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.div-nom {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  display: flex;
+  color: #ff6060;
+}
+.cercle {
+  width: 64px;
+  height: 64px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.nom {
+  width: 94px;
+  height: 52px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 375px) {
+}

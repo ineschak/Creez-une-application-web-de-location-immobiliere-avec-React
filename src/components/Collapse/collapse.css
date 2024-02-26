@@ -1,26 +1,19 @@
 .collapse-container {
-  background-color: #ff6060;
-  width: 80%;
-  height: 52px;
-  border-radius: 5px;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-h3 {
-  font-family: Montserrat;
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
+  width: 83%;
 }
 
 .collapse-header {
+  border-radius: 5px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 52px;
-  margin: 0 20px;
+  padding: 0 17px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #ff6060;
 }
 
 /* Ajout d'une classe pour inverser la direction de la flèche */
@@ -40,21 +33,37 @@ h3 {
 }
 
 .collapse-content {
-  color: black;
-  margin-bottom: 20px;
-  padding: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  overflow: hidden;
-  transform: height 1s ease;
+  display: none;
 }
 
 /* Ajout d'une classe pour augmenter la hauteur du contenu lorsqu'il est ouvert */
 
-.collapse-container.opened {
-  margin-bottom: 150px;
-}
 .collapse-container.opened .collapse-content {
+  display: flex;
   background-color: #f6f6f673;
-  overflow: visible;
+  color: black;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 374px) {
+  .collapse-container {
+    width: 100%;
+    margin: 0;
+  }
+  .collapse-header {
+    height: 30px;
+    font-size: 13px;
+  }
+  .arrow {
+    width: 16px;
+    height: 9.14px;
+  }
+  .collapse-container.opened .collapse-content {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
 }

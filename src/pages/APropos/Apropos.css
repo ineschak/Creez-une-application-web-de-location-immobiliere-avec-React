@@ -10,3 +10,18 @@
   filter: brightness(0.5);
   border-radius: 25px;
 }
+.apropos-collapses {
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .container-picture {
+    height: 111px;
+  }
+  .apropos-collapses {
+    gap: 20px;
+  }
+}

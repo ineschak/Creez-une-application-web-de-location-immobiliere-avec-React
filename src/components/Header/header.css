@@ -1,15 +1,14 @@
 header {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
   margin: 40px 0;
+  align-items: center;
 }
 
 nav a {
   color: #000000;
   text-decoration: none;
-  text-align: center;
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
@@ -17,7 +16,6 @@ nav a {
 
 nav {
   display: flex;
-  text-align: right;
   gap: 57px;
 }
 
@@ -28,6 +26,7 @@ a:focus {
 @media screen and (max-width: 375px) {
   nav a {
     font-size: 12px;
+    font-weight: 500;
   }
   nav {
     gap: 26px;

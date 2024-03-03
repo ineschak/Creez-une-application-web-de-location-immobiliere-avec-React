@@ -10,7 +10,7 @@ const Carousel = ({ pictures }) => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
     );
-  };
+  }; 
 
   const goToPreviousImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
@@ -18,20 +18,20 @@ const Carousel = ({ pictures }) => {
 
   return (
     <div className="carousel">
-      <img className="carrousel-picture" src={pictures[currentIndex]} alt="" />
+      <img className="carrousel-picture" src={pictures[currentIndex]} alt="imagecarrousel" />
       {pictures.length > 1 && (
         <>
           <img
             onClick={goToPreviousImage}
-            className="next"
+            className="prev"
             src={arrowRight}
-            alt=""
+            alt="goToPreviousImage"
           />
           <img
             onClick={goToNextImage}
-            className="prev"
+            className="next"
             src={arrowLeft}
-            alt=""
+            alt="goToNextImage"
           />
           <div className="pagination">
             {currentIndex + 1}/{pictures.length}

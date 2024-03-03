@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+
 }
 
 .star {
@@ -13,4 +14,22 @@
 
 .star.filled {
   color: #ff6060; /* Couleur des étoiles remplies */
+}
+
+@media screen and (max-width: 1025px) {
+.rating{
+    gap: 10px;
+}
+}
+@media screen and (max-width: 768px) {
+
+ 
+ 
+.rating{
+    gap: 8px;
+    justify-content: flex-start;
+}
+.star{
+    font-size: 18px;
+}
 }

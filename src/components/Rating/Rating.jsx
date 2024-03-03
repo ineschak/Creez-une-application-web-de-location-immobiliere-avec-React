@@ -15,11 +15,11 @@ const Star = ({ filled }) => {
 
 // Composant pour afficher la notation
 const Rating = ({ value }) => {
-  const filledStars = Math.floor(value);
+  const filledStars = Math.floor(value); 
   const hasHalfStar = value - filledStars >= 0.5;
 
   return (
-    <div className="rating">
+    <div className="rating ">
       {[...Array(filledStars)].map((_, index) => (
         <Star key={index} filled={true} />
       ))}

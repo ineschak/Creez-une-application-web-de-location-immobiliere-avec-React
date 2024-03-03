@@ -33,26 +33,37 @@ const LogementPage = () => {
     <div className="LogementInfo">
       <Carrousel pictures={logement.pictures} />
       <section>
-        <div className="div">
-          <p className="title">{logement.title}</p>
+        <div className="div1">
+          <div className="paraghraphe">
+            <p className="title">{logement.title}</p>
+            <p className="txt">{logement.location}</p>
+          </div>
           <div className="div-nom">
             <div className="nom">{logement.host.name}</div>
             <div className="cercle"></div>
           </div>
         </div>
-        <p className="txt">{logement.location}</p>
-        <div className="div">
+
+        <div className="div2">
           <div className="tags">
             {logement.tags.map((tag, index) => (
-              <div className="contour">
-                {" "}
-                <span className="tag" key={index}>
-                  {tag}
-                </span>
+              <div key={index} className="tagContainer">
+                <div className="contour"></div> {/* Contour rectangulaire */}
+                <span className="tag">{tag}</span>
               </div>
             ))}
           </div>
-          <Rating value={logement.rating} />
+          <div className="off"><Rating value={logement.rating} /></div>
+        </div>
+        <div className="affichage">
+          <div >
+            {" "}
+            <Rating value={logement.rating} />{" "}
+          </div>
+          <div className="divN">
+            <div className="nom">{logement.host.name}</div>
+            <div className="cercle"></div>
+          </div>
         </div>
         <div className="divCollapse">
           <Collapse

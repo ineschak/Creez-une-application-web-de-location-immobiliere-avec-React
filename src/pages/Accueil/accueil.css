@@ -25,18 +25,34 @@ h1 {
   font-weight: 700;
 }
 
-@media screen and (max-width: 375px) {
+.line-break {
+    display: none; /* Masquer le retour à la ligne par défaut */
+  }
+
+@media screen and (max-width: 1025px) {
+  h1 {
+    font-size: 36px;
+  }
+  .banner {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 225px;
-    left: 40%;
+    left: 0; /* Place le titre tout à gauche */
+    transform: translateY(
+      -50%
+    ); /* Décale le titre de moitié de sa propre taille vers le haut pour le centrer verticalement */
+    margin-left: 20px; /* Ajoute une marge à gauche du titre pour l'éloigner de l'image */
+  }
+  .line-break {
+    display: inline; /* Afficher le retour à la ligne à partir d'une largeur de 600px */
   }
   .banner {
     height: 111px;
     margin-bottom: 0;
+    text-align: left;
   }
 }

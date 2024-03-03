@@ -40,16 +40,32 @@
 
 .collapse-container.opened .collapse-content {
   display: flex;
+  flex-direction: column;
   background-color: #f6f6f673;
   color: black;
   padding: 20px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 26px;
   letter-spacing: 0em;
 }
+.collapse-container.opened .collapse-content p {
+  margin: 0;
+  line-height: 25.67px;
+}
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 1025px) {
+  .collapse-header {
+    height: 42px;
+    font-size: 16px;
+  }
+  .collapse-container.opened .collapse-content {
+    font-size: 16px;
+  }
+  .collapse-container {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 768px) {
   .collapse-container {
     width: 100%;
     margin: 0;

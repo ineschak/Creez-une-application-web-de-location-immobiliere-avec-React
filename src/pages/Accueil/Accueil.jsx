@@ -7,7 +7,7 @@ function Accueil() {
     <>
       <section className="banner">
         <img className="picture1" src={picture1} alt="" />
-        <h1> Chez vous, partout et ailleurs</h1>
+        <h1> Chez vous,<br class="line-break" /> partout et ailleurs</h1>
       </section>
       <section className="gallery">
         {" "}

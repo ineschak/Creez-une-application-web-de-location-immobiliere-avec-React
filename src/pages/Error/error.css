@@ -29,9 +29,12 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .text {
     font-size: 18px;
     line-height: 25.67px;
+  }
+  .lien-retour {
+    font-size: 14px;
   }
 }

@@ -20,13 +20,23 @@ nav {
 }
 
 a:focus {
-  text-decoration: underline;
+ text-decoration: underline;
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 1025px) {
+  nav a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+}
+@media screen and (max-width: 768px) {
   nav a {
     font-size: 12px;
     font-weight: 500;
+    line-height: 17.11px;
   }
   nav {
     gap: 26px;

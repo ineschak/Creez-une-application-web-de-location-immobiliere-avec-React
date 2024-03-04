@@ -13,7 +13,6 @@ const LogementPage = () => {
   useEffect(() => {
     // Simulation de récupération des données du logement depuis le backend
     const fetchData = async () => {
-      // Remplacer cette partie par la logique de récupération réelle des données depuis le backend
       const response = await fetch(
         `http://localhost:8080/api/properties/${id}`
       );
@@ -43,7 +42,6 @@ const LogementPage = () => {
             <div className="cercle"></div>
           </div>
         </div>
-
         <div className="div2">
           <div className="tags">
             {logement.tags.map((tag, index) => (
@@ -53,10 +51,12 @@ const LogementPage = () => {
               </div>
             ))}
           </div>
-          <div className="off"><Rating value={logement.rating} /></div>
+          <div className="off">
+            <Rating value={logement.rating} />
+          </div>
         </div>
         <div className="affichage">
-          <div >
+          <div>
             {" "}
             <Rating value={logement.rating} />{" "}
           </div>

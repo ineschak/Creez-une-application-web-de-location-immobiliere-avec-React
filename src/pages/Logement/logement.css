@@ -1,7 +1,6 @@
 .LogementInfo {
   width: 100%;
 }
-
 .title {
   font-size: 36px;
   font-weight: 500;
@@ -25,26 +24,25 @@
   display: flex;
   gap: 15px;
   white-space: nowrap;
-   
 }
 
 .contour {
-  position: absolute; /* Positionnement absolu par rapport à .tagContainer */
+  position: absolute;
   top: 0;
   left: 0;
 
-  width: 99%; /* Remplir complètement .tagContainer */
+  width: 99%;
   height: 92%;
-  background-color: transparent; /* Couleur du contour */
-  border: 1px solid #000; /* Épaisseur et couleur de la bordure */
+  background-color: transparent;
+  border: 1px solid #000;
 }
 .tagContainer {
-  position: relative; 
- display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .tag {
-  padding: 4px 34px; /* Espacement à l'intérieur du tag */
+  padding: 4px 34px;
   position: relative;
   font-size: 14px;
   font-weight: 700;
@@ -69,7 +67,6 @@
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
- 
 }
 
 .div2 {
@@ -129,10 +126,9 @@
     width: 44px;
     height: 44px;
   }
-  .nom{
+  .nom {
     font-size: 16px;
   }
- 
 }
 
 @media screen and (max-width: 768px) {
@@ -163,7 +159,7 @@
     display: flex;
     color: #ff6060;
   }
-  .tags{
+  .tags {
     gap: 10px;
   }
 
@@ -212,7 +208,6 @@
     line-height: 17.11px;
   }
   .div2 {
-    
     margin-bottom: 20px;
   }
 }

@@ -15,8 +15,8 @@
 
 h1 {
   position: absolute;
-  top: 50%; /* Adjust to vertically center the text */
-  left: 50%; /* Adjust to horizontally center the text */
+  top: 50%;  
+  left: 50%;  
   transform: translate(-50%, -50%);
   color: #ffffff;
   font-size: 48px;
@@ -26,8 +26,8 @@ h1 {
 }
 
 .line-break {
-    display: none; /* Masquer le retour à la ligne par défaut */
-  }
+  display: none; /* Masquer le retour à la ligne par défaut */
+}
 
 @media screen and (max-width: 1025px) {
   h1 {

@@ -10,11 +10,11 @@
   cursor: pointer;
 }
 
-.next{
+.next {
   left: 0;
 }
 
-.prev{
+.prev {
   right: 0;
 }
 
@@ -31,37 +31,34 @@
 .pagination {
   visibility: visible;
   position: absolute;
-  bottom: 10px; /* Ajustez la distance par rapport au bas */
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
 }
 
 @media screen and (max-width: 1025px) {
-  .carousel .carrousel-picture {  
+  .carousel .carrousel-picture {
     height: 330px;
   }
-.prev,
-.next {
-  height:60px ;
-  width:35px ;
-  padding: 10px;
-}
-
+  .prev,
+  .next {
+    height: 60px;
+    width: 35px;
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 768px) {
-
   .pagination {
     visibility: hidden;
-}
-.carousel .carrousel-picture {
-  
-  height: 255px;
-}
-.prev,
-.next {
-  height:19px ;
-  width:12px ;
-  padding: 10px;
-}
+  }
+  .carousel .carrousel-picture {
+    height: 255px;
+  }
+  .prev,
+  .next {
+    height: 19px;
+    width: 12px;
+    padding: 10px;
+  }
 }

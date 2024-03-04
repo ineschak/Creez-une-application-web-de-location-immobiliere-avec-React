@@ -16,9 +16,8 @@
   background-color: #ff6060;
 }
 
-/* Ajout d'une classe pour inverser la direction de la flèche */
 .collapse-header .arrow {
-  transition: transform 0.5s ease; /* Transition de la rotation */
+  transition: transform 0.5s ease;
 }
 
 .collapse-header .arrow-expanded {
@@ -35,8 +34,6 @@
 .collapse-content {
   display: none;
 }
-
-/* Ajout d'une classe pour augmenter la hauteur du contenu lorsqu'il est ouvert */
 
 .collapse-container.opened .collapse-content {
   display: flex;

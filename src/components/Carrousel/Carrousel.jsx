@@ -10,7 +10,7 @@ const Carousel = ({ pictures }) => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
     );
-  }; 
+  };
 
   const goToPreviousImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
@@ -18,7 +18,11 @@ const Carousel = ({ pictures }) => {
 
   return (
     <div className="carousel">
-      <img className="carrousel-picture" src={pictures[currentIndex]} alt="imagecarrousel" />
+      <img
+        className="carrousel-picture"
+        src={pictures[currentIndex]}
+        alt="imagecarrousel"
+      />
       {pictures.length > 1 && (
         <>
           <img

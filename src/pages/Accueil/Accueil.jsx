@@ -10,7 +10,7 @@ function Accueil() {
         <h1>
           {" "}
           Chez vous,
-          <br class="line-break" /> partout et ailleurs
+          <br className="line-break" /> partout et ailleurs
         </h1>
       </section>
       <section className="gallery">

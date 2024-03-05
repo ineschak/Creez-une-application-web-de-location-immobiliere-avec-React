@@ -23,7 +23,7 @@ const LogementPage = () => {
       setLogement(logementData);
     };
     fetchData();
-  }, [id, navigate]);
+  }, []);
 
   if (!logement) {
     return <div>Chargement en cours...</div>;

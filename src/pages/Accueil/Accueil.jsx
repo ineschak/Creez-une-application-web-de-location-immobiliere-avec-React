@@ -8,14 +8,12 @@ function Accueil() {
       <section className="banner">
         <img className="picture1" src={picture1} alt="" />
         <h1>
-          {" "}
           Chez vous,
           <br className="line-break" /> partout et ailleurs
         </h1>
       </section>
       <section className="gallery">
-        {" "}
-        <Card />{" "}
+        <Card />
       </section>
     </>
   );

@@ -31,10 +31,12 @@ a:focus {
   }
 }
 @media screen and (max-width: 768px) {
+
   nav a {
     font-size: 12px;
     font-weight: 500;
     line-height: 17.11px;
+    text-transform: uppercase;
   }
   nav {
     gap: 26px;

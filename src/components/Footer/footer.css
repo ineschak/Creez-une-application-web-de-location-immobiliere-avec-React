@@ -1,0 +1,35 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 209px;
+  margin-bottom: 0;
+  background-color: #000000;
+  margin-top: 40px;
+}
+
+footer img {
+  margin: 50px 0 40px 0;
+}
+
+.footer-txt {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-txt {
+    font-size: 12px;
+    width: 100px;
+    line-height: 17.11px;
+  }
+  footer img {
+    margin: 0 0 15px 0;
+  }
+}

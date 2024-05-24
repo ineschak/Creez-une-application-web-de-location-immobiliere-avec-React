@@ -1,0 +1,15 @@
+#root #container {
+  width: 86%;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+
+@media screen and (max-width: 768px) {
+  #root #container {
+    width: 89.5%;
+  }
+}

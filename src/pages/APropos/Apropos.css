@@ -1,0 +1,27 @@
+.container-picture {
+  margin-bottom: 35px;
+  width: 100%;
+  height: 223px;
+}
+.picture2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  border-radius: 25px;
+}
+.apropos-collapses {
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container-picture {
+    height: 111px;
+  }
+  .apropos-collapses {
+    gap: 20px;
+  }
+}

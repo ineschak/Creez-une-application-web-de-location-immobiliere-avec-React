@@ -1,0 +1,31 @@
+.rating {
+  width: 196px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.star {
+  color: #e3e3e3;  
+  font-size: 22px;
+}
+
+.star.filled {
+  color: #ff6060;  
+}
+
+@media screen and (max-width: 1025px) {
+  .rating {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rating {
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  .star {
+    font-size: 18px;
+  }
+}

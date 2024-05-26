@@ -1,5 +1,5 @@
 import picture2 from "../../assets/picture2.png";
-import "./apropos.css";
+import "./Apropos.css";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 
 export function Apropos() {

@@ -1,6 +1,7 @@
 {
   "name": "kasa",
   "version": "0.1.0",
+  "homepage": "https://ineschak.github.io/Creez-une-application-web-de-location-immobiliere-avec-React",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
@@ -25,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
+    "gh-pages": "^6.1.1",
     "msw": "^2.2.2"
   }
 }

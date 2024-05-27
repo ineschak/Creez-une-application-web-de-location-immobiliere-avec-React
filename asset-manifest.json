@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Creez-une-application-web-de-location-immobiliere-avec-React/static/css/main.a1881ebc.css",
+    "main.js": "/Creez-une-application-web-de-location-immobiliere-avec-React/static/js/main.b85709ec.js",
+    "static/media/picture2.png": "/Creez-une-application-web-de-location-immobiliere-avec-React/static/media/picture2.ca36510f694dfe1d4bf6.png",
+    "static/media/picture1.png": "/Creez-une-application-web-de-location-immobiliere-avec-React/static/media/picture1.969f0a4de80a6db1abb0.png",
+    "index.html": "/Creez-une-application-web-de-location-immobiliere-avec-React/index.html",
+    "main.a1881ebc.css.map": "/Creez-une-application-web-de-location-immobiliere-avec-React/static/css/main.a1881ebc.css.map",
+    "main.b85709ec.js.map": "/Creez-une-application-web-de-location-immobiliere-avec-React/static/js/main.b85709ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1881ebc.css",
+    "static/js/main.b85709ec.js"
+  ]
+}
